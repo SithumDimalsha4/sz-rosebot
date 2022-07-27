@@ -62,7 +62,7 @@ async def start_bot():
             )
 
         else:
-            await app.send_message(LOG_GROUP_ID, "Bot started!")
+            await app.send_message(LOG_GROUP_ID, "I'm Online Now! 💫")
     except Exception:
         pass
     print(f"{all_module}")
@@ -86,21 +86,21 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text=" ➕ Add Me To Your Group ➕ ",
+                text=" ➕ Add Soshie To Your Group ➕ ",
                 url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
         [
            InlineKeyboardButton(
-                text=" ℹ️ About", callback_data="_about"
+                text=" 🙋 About ", callback_data="_about"
             ),
             InlineKeyboardButton(
-                text="🌍 languages ", callback_data="_langs"
+                text="🏳‍🌈 languages ", callback_data="_langs"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⚒ Help ", callback_data="bot_commands"
+                text="❓Commands Help ", callback_data="bot_commands"
             ),
         ],
         [
